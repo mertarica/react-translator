@@ -1,0 +1,18 @@
+.translation-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px;
+  gap: 1rem;
+  &-card {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .translation-history {
+    margin: 32px auto;
+    gap: 1.5rem;
+    max-width: 920px;
+  }
+}

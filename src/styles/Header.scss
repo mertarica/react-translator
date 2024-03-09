@@ -1,0 +1,17 @@
+.header {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  &-logo {
+    color: #5f6368;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+      display: inline-block;
+      height: 24px;
+      width: 74px;
+      padding-right: 4px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.translate-input {
+  &-container {
+    position: relative;
+    button {
+      text-transform: none;
+    }
+  }
+  &-field {
+    width: 100%;
+    .MuiInputBase-multiline {
+      padding: 16px 12px 64px;
+    }
+  }
+  &-tools {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    padding: 4px;
+    width: calc(100% - 8px);
+  }
+  &-character-counter {
+    color: $tuna-gray-60;
+    position: absolute;
+    right: 12px;
+    bottom: 4px;
+    font-size: 11px;
+    cursor: default;
+  }
+}

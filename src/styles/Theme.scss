@@ -1,0 +1,63 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1920px,
+);
+
+$tuna-gray: #303642;
+$tuna-gray-80: #555d71;
+$tuna-gray-60: #898e9a;
+$tuna-gray-40: #dadada;
+$tuna-gray-20: #f6f6f6;
+$tuna-gray-10: #e9eaed;
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+$font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$headings-font-family: Nimbus-sans, "Nimbus Sans", Roboto, -apple-system,
+  BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif;
+$headings-font-weight: 700;
+
+$font-size-base: 1.125rem;
+$h1-font-size: 5rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+
+$display1-weight: 700;
+$display2-weight: 700;
+$display3-weight: 700;
+$display4-weight: 400;
+$display5-weight: 300;
+$display6-weight: 700;
+
+h2,
+.h2 {
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+  font-weight: 700;
+}
+
+h5,
+.h5 {
+  font-weight: 300;
+}

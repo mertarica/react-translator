@@ -1,0 +1,27 @@
+.translate-output {
+  &-container {
+    position: relative;
+    button {
+      text-transform: none;
+    }
+  }
+  &-field {
+    width: 100%;
+    .MuiInputBase-multiline {
+      padding: 16px 12px 64px;
+    }
+  }
+  &-tools {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    padding: 4px;
+    width: calc(100% - 8px);
+  }
+  &-copy-message {
+    font-size: 11px;
+    color: $tuna-gray-80;
+    margin: auto 0px;
+    font-weight: 500;
+  }
+}
